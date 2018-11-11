@@ -1,0 +1,83 @@
+---
+layout:     post
+title:      一起学Redis(三)-命令
+subtitle:   一起学Redis系列文章
+date:       2018-11-11
+author:     fanyetu
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - Redis
+---
+
+# 一起学Redis(三)-命令
+
+## string
+
+### 字符串基础命令
+
+| 命令          | 用例和描述                                                        |
+| ----------- | ------------------------------------------------------------ |
+| GET         | GET key-name 获取存储在给定键值上的值                                    |
+| SET         | SET key-name value 设置存储在给定键值上的值                              |
+| DEL         | DEL key-name 删除给定键值（这个命令适用于所有的类型）                            |
+| INCR        | INCR key-name 将键值存储的值加上1                                     |
+| DECR        | DECR key-name 将键值存储的值减去1                                     |
+| INCRBY      | INCRBY key-name amount 将键值存储的值加上整数amount                     |
+| DECRBY      | DECRBY key-name amount 将键值存储的值减去整数amount                     |
+| INCRBYFLOAT | INCRBYFLOAT key-name amount 将键值存储的值加上浮点数amount，在Redis2.6之后可用 |
+
+### 字符串处理子串及二进制位的命令
+
+| 命令       | 用例及描述                                                                                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| APPEND   | APPEND key-name value 将值value追加到给定的键key-name当前存储的值的末尾                                                                          |
+| GETRANGE | GETRANGE key-name start end 获取一个由偏移量start至偏移量end范围内所有字符组成的子串，包含start和end                                                       |
+| SETRANGE | SETRANGE key-name offset value 从offset开始，将当前键值存储的值设置成给定的value                                                                  |
+| GETBIT   | GETBIT key-name offset 将字符串看作是二进制位串，并返回位串中偏移量为offset的二进制位的值                                                                    |
+| SETBIT   | SETBIT key-name offset value 将字符串看成二进制位串，并将偏移量为offset的二进制位的值设置成value                                                           |
+| BITCOUNT | BITCOUNT key-name 【start end】 统计二进制位串中值为1的二进制位的数量，如果制定了偏移量，那么只对偏移量范围内的位串进行统计                                                   |
+| BITOP    | BITOP operation dest-key key-name 【key-name ...】 对一个或多个二进制位串执行包括AND(并)、OR(或)、XOR(异或)、NOT(非)在内的任意一种按位运算操作，并将计算所得的结果存储到dest-key中 |
+
+## 列表
+
+### 列表常用命令
+
+| 命令  | 用例和描述 |
+| --- | ----- |
+|     |       |
+|     |       |
+|     |       |
+|     |       |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
